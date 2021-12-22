@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+.btn {
+    
+    border-radius: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid rgb(255, 0, 0); 
+    display: inline-block;
+    padding: 10px 25px; 
+    text-decoration: none; 
+    color: #000; 
+    
+  }
+.btn:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #cf00ad, #5500c5);
+    color: rgb(255, 255, 0);
+   }
+*/
