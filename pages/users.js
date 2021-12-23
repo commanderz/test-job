@@ -11,11 +11,6 @@ const Users = ({ users }) => {
 
     }
 
-    //let text2=
-    //text2=text2+text;
-    //text2=text2+ ${
-    //{ for (let i = 0; i < 10; i++) 
-    //<li key={itemz[i].id}> {itemz[i].name}  </li>;
     let i = 0;
     return (
         <MainContainer keywords={"users next js"}>
@@ -42,18 +37,11 @@ console.log("usersType=" + typeof users);
 export default Users;
 
 export async function getStaticProps(context) {
-    //const response = await fetch(`http://localhost:3000/data.json`)
-    //const response = await fetch(`c:\Users\admin007\next\myapp_v1\pages\data.json`);
-    //const users = await response.json()
     let fs = require('fs');
     let data = fs.readFileSync('pages/data.json', 'utf8');
     let users = JSON.parse(data);
-    //console.log(typeof users[2].logo);
-    //console.log(json, 'the json obj');
-    //let data = JSON.parse(jsontext);
-
 
     return {
-        props: { users }, // will be passed to the page component as props
+        props: { users },
     }
 }

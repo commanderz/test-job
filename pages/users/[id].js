@@ -51,35 +51,16 @@ const Users = ({ users }) => {
     }
 };
 
-//console.log("usersType=" + typeof users);
 export default Users;
 
-/*export async function getStaticProps(context) {
-    //const response = await fetch(`http://localhost:3000/data.json`)
-    //const response = await fetch(`c:\Users\admin007\next\myapp_v1\pages\data.json`);
-    //const users = await response.json()
-    let fs = require('fs');
-    let data = fs.readFileSync('pages/data.json', 'utf8');
-    let users = JSON.parse(data);
-    //console.log(typeof users[2].logo);
-    //console.log(json, 'the json obj');
-    //let data = JSON.parse(jsontext);
-
-
-    return {
-        props: { users }, // will be passed to the page component as props
-    }
-}*/
 
 export async function getServerSideProps({ params }) {
 
-    //if (params.id != "bootstrap.min.css") {
-    //console.log('testVALUE=' + params.id + ", type=" + typeof params.id); //params.id = /page/id
+    //if (params.id != "bootstrap.min.css") 
     let fs = require('fs');
     let data = fs.readFileSync('pages/data.json', 'utf8');
     let users = JSON.parse(data);
 
-    //}
     return {
 
         props: { users },
