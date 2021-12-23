@@ -4,14 +4,4 @@
     font-size: 20px;
     margin: 10px;
 }
-.btn1 { 
-    border: none;
-    border-radius: 7px;
-    padding: 10px 25px;
-    background: #ff9900;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-}
 
